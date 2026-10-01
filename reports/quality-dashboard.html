@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+
+    <title>
+        QA Quality Dashboard
+    </title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background: #f6f7fb;
+            color: #111;
+        }
+
+        h1 {
+            margin-bottom: 8px;
+        }
+
+        h2 {
+            margin-top: 32px;
+        }
+
+        .subtitle {
+            color: #555;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns:
+                repeat(5, minmax(140px, 1fr));
+            gap: 16px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow:
+                0 2px 10px #00000012;
+        }
+
+        .label {
+            font-size: 16px;
+        }
+
+        .value {
+            font-size: 30px;
+            font-weight: bold;
+            margin-top: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            margin-top: 24px;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th {
+            font-weight: bold;
+        }
+
+        .healthy {
+            font-weight: bold;
+        }
+
+        .note {
+            color: #555;
+            margin-top: 12px;
+        }
+
+        @media (max-width: 900px) {
+
+            .grid {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+            body {
+                margin: 20px;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>
+        Autonomous QA Quality Dashboard
+    </h1>
+
+    <p class="subtitle">
+        Generated automatically from
+        TestNG execution history.
+    </p>
+
+    <h2>
+        Latest Test Run
+    </h2>
+
+    <div class="grid">
+
+        <div class="card">
+
+            <div class="label">
+                Total Tests
+            </div>
+
+            <div class="value">
+                14
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <div class="label">
+                Passed
+            </div>
+
+            <div class="value">
+                14
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <div class="label">
+                Failed
+            </div>
+
+            <div class="value">
+                0
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <div class="label">
+                Pass %
+            </div>
+
+            <div class="value">
+                100.00
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <div class="label">
+                Healed
+            </div>
+
+            <div class="value">
+                4
+            </div>
+
+        </div>
+
+    </div>
+
+    <table>
+
+        <tr>
+
+            <th>
+                Latest Run Metric
+            </th>
+
+            <th>
+                Value
+            </th>
+
+        </tr>
+
+        <tr>
+
+            <td>
+                Test health
+            </td>
+
+            <td class="healthy">
+                GREEN / HEALTHY
+            </td>
+
+        </tr>
+
+        <tr>
+
+            <td>
+                Failure count
+            </td>
+
+            <td>
+                0
+            </td>
+
+        </tr>
+
+        <tr>
+
+            <td>
+                Skipped
+            </td>
+
+            <td>
+                0
+            </td>
+
+        </tr>
+
+        <tr>
+
+            <td>
+                Self-healing events
+            </td>
+
+            <td>
+                4
+            </td>
+
+        </tr>
+
+        <tr>
+
+            <td>
+                Requirement traceability
+            </td>
+
+            <td>
+                See
+                src/test/resources/data/requirements.csv
+            </td>
+
+        </tr>
+
+        <tr>
+
+            <td>
+                Risk selection
+            </td>
+
+            <td>
+                HIGH → MEDIUM → LOW
+            </td>
+
+        </tr>
+
+    </table>
+
+    <h2>
+        Historical Test Executions
+    </h2>
+
+    <table>
+
+        <tr>
+
+            <th>
+                Metric
+            </th>
+
+            <th>
+                Value
+            </th>
+
+        </tr>
+
+        <tr>
+
+            <td>
+                Total Historical Executions
+            </td>
+
+            <td>
+                124
+            </td>
+
+        </tr>
+
+        <tr>
+
+            <td>
+                Total Passed
+            </td>
+
+            <td>
+                121
+            </td>
+
+        </tr>
+
+        <tr>
+
+            <td>
+                Total Failed
+            </td>
+
+            <td>
+                3
+            </td>
+
+        </tr>
+
+        <tr>
+
+            <td>
+                Total Skipped
+            </td>
+
+            <td>
+                0
+            </td>
+
+        </tr>
+
+        <tr>
+
+            <td>
+                Total Self-healing Events
+            </td>
+
+            <td>
+                32
+            </td>
+
+        </tr>
+
+        <tr>
+
+            <td>
+                Historical Pass Rate
+            </td>
+
+            <td>
+                97.58%
+            </td>
+
+        </tr>
+
+    </table>
+
+    <p class="note">
+        Latest-run metrics are calculated from
+        reports/latest-run.csv.
+    </p>
+
+</body>
+
+</html>

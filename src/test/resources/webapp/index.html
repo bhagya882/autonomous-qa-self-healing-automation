@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>QA Demo Store</title>
+<style>
+body{font-family:Arial,sans-serif;margin:0;background:#f3f6fb;color:#222}.wrap{max-width:480px;margin:70px auto;background:#fff;padding:32px;border-radius:14px;box-shadow:0 6px 24px rgba(0,0,0,.1)}
+input,button{width:100%;padding:12px;margin:8px 0;box-sizing:border-box;border-radius:8px;border:1px solid #ccc}button{cursor:pointer;font-weight:600}
+#message{min-height:28px;margin-top:14px;font-weight:600}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>QA Demo Store</h1>
+<p>Local application used by the automation platform.</p>
+<label>Username</label><input id="username" placeholder="Username">
+<label>Password</label><input id="password" type="password" placeholder="Password">
+<!-- The original id loginBtn was intentionally changed; fallback data-testid keeps the scenario healable. -->
+<button data-testid="login-submit" type="button" onclick="login()">Login</button>
+<div id="message"></div>
+</div>
+<script>
+function login(){
+ const u=document.getElementById('username').value;
+ const p=document.getElementById('password').value;
+ document.getElementById('message').textContent=(u==='bhagya'&&p==='Password123')?'Login successful':'Invalid credentials';
+}
+</script>
+</body></html>

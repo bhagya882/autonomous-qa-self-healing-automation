@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Autonomous QA Suite" verbose="1">
+    <listeners>
+        <listener class-name="com.bhagya.qa.listener.QualityListener"/>
+    </listeners>
+    <test name="Quality Intelligence">
+        <classes>
+            <class name="com.bhagya.qa.tests.TraceabilityTests"/>
+            <class name="com.bhagya.qa.tests.QualityIntelligenceTests"/>
+            <class name="com.bhagya.qa.tests.ExecutionAnalyticsTests"/>
+            <class name="com.bhagya.qa.tests.RegressionSelectionTests"/>
+            <class name="com.bhagya.qa.tests.DefectCorrelationTests"/>
+        </classes>
+    </test>
+    <test name="UI Self-Healing Regression">
+        <classes>
+            <class name="com.bhagya.qa.tests.LoginTests"/>
+            <class name="com.bhagya.qa.tests.AdditionalLoginTests"/>
+            <class name="com.bhagya.qa.tests.SelfHealingTests"/>
+        </classes>
+    </test>
+</suite>

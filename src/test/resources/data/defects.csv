@@ -1,0 +1,5 @@
+defectId,module,failureType,summary
+D001,LOGIN,LOCATOR_FAILURE,Login submit locator changed without test update
+D002,LOGIN,ASSERTION_FAILURE,Invalid credential message mismatch
+D003,CART,TIMEOUT_FAILURE,Cart API response exceeded configured wait
+D004,CHECKOUT,APPLICATION_OR_SERVICE_FAILURE,Checkout service returned HTTP 503

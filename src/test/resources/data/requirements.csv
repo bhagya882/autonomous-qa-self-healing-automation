@@ -1,0 +1,5 @@
+requirementId,description,module,risk,testId,automation
+R001,Valid user should be able to log in,LOGIN,HIGH,TC_LOGIN_001,Yes
+R002,Invalid credentials should be rejected,LOGIN,MEDIUM,TC_LOGIN_002,Yes
+R003,Application should show clear validation for missing username,LOGIN,MEDIUM,TC_LOGIN_003,Planned
+R004,Login button should remain usable after locator changes,LOGIN,HIGH,TC_LOGIN_004,Yes
